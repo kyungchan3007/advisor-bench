@@ -1,0 +1,13 @@
+실행 12개 → runs/full-t2
+t2 sonnet-fable rep1: 23/23 · $1.50 (sonnet $0.42 · fable $1.08) · 464s · advisor 1 · delegate 0
+t2 sonnet-opus rep1: 23/23 · $1.29 (sonnet $0.61 · opus $0.68) · 653s · advisor 1 · delegate 0
+t2 opus-worker1 rep1: 23/23 · $2.02 (opus $1.22 · sonnet $0.80) · 577s · advisor 0 · delegate 2
+t2 opus-fable rep1: 22/23 · $5.72 (opus $2.91 · fable $2.81) · 1373s · advisor 3 · delegate 0
+t2 opus-worker2 rep1: 23/23 · $3.29 (opus $2.01 · sonnet $1.27) · 1039s · advisor 0 · delegate 2
+t2 opus-plan-sonnet rep1: 23/23 · $2.48 (opus $2.12 · sonnet $0.36) · 926s · advisor 0 · delegate 0
+t2 sonnet-fable rep2: 23/23 · $3.01 (sonnet $0.71 · fable $2.30) · 784s · advisor 2 · delegate 0
+t2 sonnet-opus rep2: 23/23 · $1.60 (sonnet $1.02 · opus $0.58) · 1060s · advisor 2 · delegate 0
+t2 opus-worker1 rep2: 23/23 · $1.55 (opus $0.80 · sonnet $0.75) · 641s · advisor 0 · delegate 1
+t2 opus-fable rep2: 23/23 · $3.10 (opus $1.91 · fable $1.19) · 2701s · advisor 3 · delegate 0
+t2 opus-plan-sonnet rep2: 23/23 · $2.80 (opus $2.51 · sonnet $0.29) · 1034s · advisor 0 · delegate 0
+t2 opus-worker2 rep2: 23/23 · $3.11 (opus $1.33 · sonnet $1.78) · 1202s · advisor 0 · delegate 4
