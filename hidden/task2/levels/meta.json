@@ -1,0 +1,209 @@
+{
+ "h01": {
+  "kind": "pocket",
+  "tick": 82,
+  "fare": 3650,
+  "boardings": 1,
+  "ms": 36,
+  "size": "61x113",
+  "lines": 26
+ },
+ "h02": {
+  "kind": "pocket",
+  "tick": 81,
+  "fare": 3250,
+  "boardings": 3,
+  "ms": 34,
+  "size": "61x113",
+  "lines": 28
+ },
+ "h03": {
+  "kind": "pocket",
+  "tick": 87,
+  "fare": 4100,
+  "boardings": 3,
+  "ms": 54,
+  "size": "61x113",
+  "lines": 27
+ },
+ "h04": {
+  "kind": "pocket",
+  "tick": 105,
+  "fare": 1950,
+  "boardings": 1,
+  "ms": 412,
+  "size": "61x113",
+  "lines": 26
+ },
+ "h05": {
+  "kind": "pocket",
+  "tick": 69,
+  "fare": 2350,
+  "boardings": 2,
+  "ms": 61,
+  "size": "61x113",
+  "lines": 25
+ },
+ "h06": {
+  "kind": "pocket",
+  "tick": 93,
+  "fare": 3300,
+  "boardings": 2,
+  "ms": 30,
+  "size": "61x113",
+  "lines": 28
+ },
+ "h07": {
+  "kind": "pocket",
+  "tick": 89,
+  "fare": 2650,
+  "boardings": 2,
+  "ms": 52,
+  "size": "61x113",
+  "lines": 26
+ },
+ "h08": {
+  "kind": "evict",
+  "tick": 69,
+  "fare": 3050,
+  "boardings": 5,
+  "ms": 16,
+  "size": "61x113",
+  "lines": 26
+ },
+ "h09": {
+  "kind": "evict",
+  "tick": 75,
+  "fare": 1650,
+  "boardings": 1,
+  "ms": 16,
+  "size": "61x113",
+  "lines": 25
+ },
+ "h10": {
+  "kind": "evict",
+  "tick": 57,
+  "fare": 2750,
+  "boardings": 2,
+  "ms": 10,
+  "size": "61x113",
+  "lines": 27
+ },
+ "h11": {
+  "kind": "evict",
+  "tick": 83,
+  "fare": 2750,
+  "boardings": 4,
+  "ms": 22,
+  "size": "61x113",
+  "lines": 24
+ },
+ "h12": {
+  "kind": "exit",
+  "tick": 65,
+  "fare": 2650,
+  "boardings": 2,
+  "ms": 9,
+  "size": "61x113",
+  "lines": 25
+ },
+ "h13": {
+  "kind": "exit",
+  "tick": 63,
+  "fare": 2650,
+  "boardings": 4,
+  "ms": 12,
+  "size": "61x113",
+  "lines": 27
+ },
+ "h14": {
+  "kind": "exit",
+  "tick": 65,
+  "fare": 2450,
+  "boardings": 2,
+  "ms": 14,
+  "size": "61x113",
+  "lines": 28
+ },
+ "h15": {
+  "kind": "exit",
+  "tick": 39,
+  "fare": 2250,
+  "boardings": 2,
+  "ms": 6,
+  "size": "61x113",
+  "lines": 28
+ },
+ "h16": {
+  "kind": "last",
+  "tick": 59,
+  "fare": 2250,
+  "boardings": 1,
+  "ms": 10,
+  "size": "61x113",
+  "lines": 26
+ },
+ "h17": {
+  "kind": "last",
+  "tick": 91,
+  "fare": 2950,
+  "boardings": 3,
+  "ms": 24,
+  "size": "61x113",
+  "lines": 24
+ },
+ "h18": {
+  "kind": "last",
+  "tick": 91,
+  "fare": 1850,
+  "boardings": 1,
+  "ms": 22,
+  "size": "61x113",
+  "lines": 25
+ },
+ "h19": {
+  "kind": "last",
+  "tick": 102,
+  "fare": 2050,
+  "boardings": 1,
+  "ms": 27,
+  "size": "61x113",
+  "lines": 26
+ },
+ "h20": {
+  "kind": "normal",
+  "tick": 50,
+  "fare": 3150,
+  "boardings": 3,
+  "ms": 9,
+  "size": "61x113",
+  "lines": 28
+ },
+ "h21": {
+  "kind": "normal",
+  "tick": 52,
+  "fare": 2850,
+  "boardings": 4,
+  "ms": 7,
+  "size": "61x113",
+  "lines": 28
+ },
+ "h22": {
+  "kind": "normal",
+  "tick": 57,
+  "fare": 2350,
+  "boardings": 3,
+  "ms": 11,
+  "size": "61x113",
+  "lines": 26
+ },
+ "h23": {
+  "kind": "normal",
+  "tick": 69,
+  "fare": 4050,
+  "boardings": 3,
+  "ms": 15,
+  "size": "61x113",
+  "lines": 25
+ }
+}

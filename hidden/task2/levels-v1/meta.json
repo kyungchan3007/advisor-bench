@@ -1,0 +1,209 @@
+{
+ "h01": {
+  "kind": "exit",
+  "tick": 52,
+  "fare": 1750,
+  "boardings": 1,
+  "ms": 1814,
+  "size": "37x65",
+  "lines": 9
+ },
+ "h02": {
+  "kind": "exit",
+  "tick": 41,
+  "fare": 2150,
+  "boardings": 1,
+  "ms": 586,
+  "size": "37x65",
+  "lines": 10
+ },
+ "h03": {
+  "kind": "exit",
+  "tick": 50,
+  "fare": 1950,
+  "boardings": 1,
+  "ms": 486,
+  "size": "37x65",
+  "lines": 10
+ },
+ "h04": {
+  "kind": "exit",
+  "tick": 42,
+  "fare": 2250,
+  "boardings": 1,
+  "ms": 164,
+  "size": "37x65",
+  "lines": 8
+ },
+ "h05": {
+  "kind": "exit",
+  "tick": 53,
+  "fare": 2350,
+  "boardings": 2,
+  "ms": 1748,
+  "size": "37x65",
+  "lines": 7
+ },
+ "h06": {
+  "kind": "exit",
+  "tick": 49,
+  "fare": 2650,
+  "boardings": 2,
+  "ms": 965,
+  "size": "37x65",
+  "lines": 8
+ },
+ "h07": {
+  "kind": "last",
+  "tick": 32,
+  "fare": 2350,
+  "boardings": 1,
+  "ms": 75,
+  "size": "37x65",
+  "lines": 10
+ },
+ "h08": {
+  "kind": "last",
+  "tick": 47,
+  "fare": 1550,
+  "boardings": 2,
+  "ms": 2280,
+  "size": "37x65",
+  "lines": 9
+ },
+ "h09": {
+  "kind": "last",
+  "tick": 32,
+  "fare": 1750,
+  "boardings": 1,
+  "ms": 88,
+  "size": "37x65",
+  "lines": 10
+ },
+ "h10": {
+  "kind": "last",
+  "tick": 52,
+  "fare": 2250,
+  "boardings": 1,
+  "ms": 1268,
+  "size": "37x65",
+  "lines": 10
+ },
+ "h11": {
+  "kind": "last",
+  "tick": 43,
+  "fare": 1450,
+  "boardings": 1,
+  "ms": 274,
+  "size": "37x65",
+  "lines": 10
+ },
+ "h12": {
+  "kind": "theme",
+  "tick": 43,
+  "fare": 2550,
+  "boardings": 3,
+  "ms": 606,
+  "size": "37x65",
+  "lines": 8
+ },
+ "h13": {
+  "kind": "theme",
+  "tick": 48,
+  "fare": 2450,
+  "boardings": 2,
+  "ms": 409,
+  "size": "37x65",
+  "lines": 8
+ },
+ "h14": {
+  "kind": "theme",
+  "tick": 29,
+  "fare": 2350,
+  "boardings": 2,
+  "ms": 26,
+  "size": "37x65",
+  "lines": 8
+ },
+ "h15": {
+  "kind": "theme",
+  "tick": 28,
+  "fare": 2450,
+  "boardings": 2,
+  "ms": 62,
+  "size": "37x65",
+  "lines": 8
+ },
+ "h16": {
+  "kind": "theme",
+  "tick": 43,
+  "fare": 2450,
+  "boardings": 3,
+  "ms": 277,
+  "size": "37x65",
+  "lines": 5
+ },
+ "h17": {
+  "kind": "normal",
+  "tick": 35,
+  "fare": 2750,
+  "boardings": 2,
+  "ms": 87,
+  "size": "37x65",
+  "lines": 9
+ },
+ "h18": {
+  "kind": "normal",
+  "tick": 36,
+  "fare": 2050,
+  "boardings": 3,
+  "ms": 162,
+  "size": "37x65",
+  "lines": 10
+ },
+ "h19": {
+  "kind": "normal",
+  "tick": 41,
+  "fare": 2450,
+  "boardings": 3,
+  "ms": 315,
+  "size": "37x65",
+  "lines": 8
+ },
+ "h20": {
+  "kind": "normal",
+  "tick": 40,
+  "fare": 2650,
+  "boardings": 3,
+  "ms": 121,
+  "size": "37x65",
+  "lines": 10
+ },
+ "h21": {
+  "kind": "big",
+  "tick": 34,
+  "fare": 2650,
+  "boardings": 2,
+  "ms": 185,
+  "size": "49x73",
+  "lines": 14
+ },
+ "h22": {
+  "kind": "big",
+  "tick": 36,
+  "fare": 2350,
+  "boardings": 2,
+  "ms": 368,
+  "size": "49x73",
+  "lines": 15
+ },
+ "h23": {
+  "kind": "big",
+  "tick": 47,
+  "fare": 2850,
+  "boardings": 3,
+  "ms": 2325,
+  "size": "49x73",
+  "lines": 14
+ }
+}
