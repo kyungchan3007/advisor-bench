@@ -1,0 +1,41 @@
+{
+  "task": "t2",
+  "combo": "opus-fable",
+  "rep": 2,
+  "pass": 23,
+  "total": 23,
+  "failed": [],
+  "costUsd": 3.1040102000000003,
+  "costByModel": {
+    "opus": 1.9106801999999996,
+    "fable": 1.19333
+  },
+  "durationMs": 1444527,
+  "turns": 39,
+  "advisorCalls": 3,
+  "delegations": 0,
+  "delegatedTo": [],
+  "permissionDenials": 5,
+  "claudeError": false,
+  "claudeTimedOut": true,
+  "steps": [
+    {
+      "name": "main",
+      "model": "opus",
+      "costUsd": 3.1040102000000003,
+      "costByModel": {
+        "opus": 1.9106801999999996,
+        "fable": 1.19333
+      },
+      "durationMs": 1444527,
+      "turns": 39,
+      "advisorCalls": 3,
+      "delegations": 0,
+      "delegatedTo": [],
+      "permissionDenials": 5,
+      "claudeError": false,
+      "claudeTimedOut": true
+    }
+  ],
+  "work": "/var/folders/ht/prc2m2q939d1l29154xtvtmw0000gn/T/advisor-t2-TsPqJu"
+}

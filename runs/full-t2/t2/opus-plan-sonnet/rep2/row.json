@@ -1,0 +1,56 @@
+{
+  "task": "t2",
+  "combo": "opus-plan-sonnet",
+  "rep": 2,
+  "pass": 23,
+  "total": 23,
+  "failed": [],
+  "costUsd": 2.8020761,
+  "costByModel": {
+    "opus": 2.5105904,
+    "sonnet": 0.2914857
+  },
+  "durationMs": 1030776,
+  "turns": 16,
+  "advisorCalls": 0,
+  "delegations": 0,
+  "delegatedTo": [],
+  "permissionDenials": 2,
+  "claudeError": false,
+  "claudeTimedOut": false,
+  "steps": [
+    {
+      "name": "plan",
+      "model": "opus",
+      "costUsd": 2.5105904,
+      "costByModel": {
+        "opus": 2.5105904
+      },
+      "durationMs": 913151,
+      "turns": 9,
+      "advisorCalls": 0,
+      "delegations": 0,
+      "delegatedTo": [],
+      "permissionDenials": 1,
+      "claudeError": false,
+      "claudeTimedOut": false
+    },
+    {
+      "name": "impl",
+      "model": "sonnet",
+      "costUsd": 0.2914857,
+      "costByModel": {
+        "sonnet": 0.2914857
+      },
+      "durationMs": 117625,
+      "turns": 7,
+      "advisorCalls": 0,
+      "delegations": 0,
+      "delegatedTo": [],
+      "permissionDenials": 1,
+      "claudeError": false,
+      "claudeTimedOut": false
+    }
+  ],
+  "work": "/var/folders/ht/prc2m2q939d1l29154xtvtmw0000gn/T/advisor-t2-0stzAU"
+}

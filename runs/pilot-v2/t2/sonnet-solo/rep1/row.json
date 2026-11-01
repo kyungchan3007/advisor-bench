@@ -1,0 +1,39 @@
+{
+  "task": "t2",
+  "combo": "sonnet-solo",
+  "rep": 1,
+  "pass": 23,
+  "total": 23,
+  "failed": [],
+  "costUsd": 0.4038078,
+  "costByModel": {
+    "sonnet": 0.4038078
+  },
+  "durationMs": 225433,
+  "turns": 10,
+  "advisorCalls": 0,
+  "delegations": 0,
+  "delegatedTo": [],
+  "permissionDenials": 1,
+  "claudeError": false,
+  "claudeTimedOut": false,
+  "steps": [
+    {
+      "name": "main",
+      "model": "sonnet",
+      "costUsd": 0.4038078,
+      "costByModel": {
+        "sonnet": 0.4038078
+      },
+      "durationMs": 225433,
+      "turns": 10,
+      "advisorCalls": 0,
+      "delegations": 0,
+      "delegatedTo": [],
+      "permissionDenials": 1,
+      "claudeError": false,
+      "claudeTimedOut": false
+    }
+  ],
+  "work": "/var/folders/ht/prc2m2q939d1l29154xtvtmw0000gn/T/advisor-t2-D74fNw"
+}

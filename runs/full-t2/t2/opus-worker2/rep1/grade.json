@@ -1,0 +1,145 @@
+{
+  "pass": 23,
+  "total": 23,
+  "failed": [],
+  "levels": {
+    "h01.json": {
+      "ok": true,
+      "ms": 73,
+      "timedOut": false,
+      "got": "DDDDUUUURRRURRRW[6>혜화]RRUUUURRRRUUUUUUUUUUUURRRRDDDDRRRR"
+    },
+    "h02.json": {
+      "ok": true,
+      "ms": 79,
+      "timedOut": false,
+      "got": "LRUUUUUUUURRUW[5하>동대문]DD[14하>여의도]DDLLLUUW[4하>신당]DDRLRLRRRRURRUUURRRRRRRRUUURRDDRRRR"
+    },
+    "h03.json": {
+      "ok": true,
+      "ms": 75,
+      "timedOut": false,
+      "got": "LLLLUUULLLLUW[4하>시청]DLLLLUUULLLLLLLLLLLLLLLLLLLLLLLLUUUUUUUUUUUULLLLUULLU[5상>여의도]DD[13상>논현]DDRRRR"
+    },
+    "h04.json": {
+      "ok": true,
+      "ms": 252,
+      "timedOut": false,
+      "got": "DDDDLLRLRLRLRLRLRLRLRLRLRLRLRRUUUULLLLDDDDDDDDDDDDDDDRRUUUUUURRLLUUUUUUUUUUUUUUUUUUUUUUUURRRU[10하>노원]LLDDRRRR"
+    },
+    "h05.json": {
+      "ok": true,
+      "ms": 81,
+      "timedOut": false,
+      "got": "DDDDDDDDUUUUUUUULLLLU[8하>건대]DDRLRLRL[12>한남]DLLDDDDDDDDLLLLDDDDURRDDDRRRR"
+    },
+    "h06.json": {
+      "ok": true,
+      "ms": 79,
+      "timedOut": false,
+      "got": "DDDDDDDDDDDDDDDLLLLDDDDLLW[3하>동대문]DLUW[11하>이촌]LLUUUULLLLDDDDDDDDDDDDLLLLLLLLLLLLLLLLLLLLLLLLDDDRRDDRRRR"
+    },
+    "h07.json": {
+      "ok": true,
+      "ms": 87,
+      "timedOut": false,
+      "got": "LLLLDURRRRUURRUU[14내>광나루]LLULLUUULLLLLLLLLLLLUULLUU[10상>을지로]DRRRRRRDDDLLLLLLLLUUULLDDDRRRR"
+    },
+    "h08.json": {
+      "ok": true,
+      "ms": 76,
+      "timedOut": false,
+      "got": "DDDDLLRLRL[2상>옥수]DDLRLRLR[14하>선릉]DRU[10상>마포]DD[12내>신사]DLLDDRRRRRRRRRRRRRRRRDDLL[8외>공덕]"
+    },
+    "h09.json": {
+      "ok": true,
+      "ms": 73,
+      "timedOut": false,
+      "got": "DDDUUURRRURRR[7상>여의도]DRRRRRRDDDDDDDDDRRRRRRRRRRRRRRRRDDDLLRRRRDDDDDDRRRRRRRRDDD"
+    },
+    "h10.json": {
+      "ok": true,
+      "ms": 74,
+      "timedOut": false,
+      "got": "DDUURRRURRDR[14하>시청]L[8상>성수]DDRLRRDDLLLLLLLLLLLLUUURRDUUURRRR"
+    },
+    "h11.json": {
+      "ok": true,
+      "ms": 77,
+      "timedOut": false,
+      "got": "LRUURUU[11하>건대]UUW[5>광나루]DLLLLLLUUUUUUUUULLLLUUDDLLLLLLLLLLLLLLLLLLLLUUULLDLLLL[3하>여의도]DDRUUW[1하>신림]"
+    },
+    "h12.json": {
+      "ok": true,
+      "ms": 73,
+      "timedOut": false,
+      "got": "DDDUUURRRRRRRRRRRRUUUUUUUUUUUUUUURRRRRRU[4>상왕십리]DDLR[8내>시청]DLLLLLL"
+    },
+    "h13.json": {
+      "ok": true,
+      "ms": 73,
+      "timedOut": false,
+      "got": "DDDRR[11상>옥수]LLLLRL[7외>강남]W[7외>노량진]DLLLLDDDLLLLLLLLLLLLDDLLW[8외>사당]LLLLULLUUURRRR"
+    },
+    "h14.json": {
+      "ok": true,
+      "ms": 73,
+      "timedOut": false,
+      "got": "DDUULLDLLLL[13하>용산]DLLLLLUUULLLLLLLLLLLLLLLLUUURRDRRRRW[10하>동대문]LLLLULL"
+    },
+    "h15.json": {
+      "ok": true,
+      "ms": 75,
+      "timedOut": false,
+      "got": "DDDDUUUURRRRUUURRDRRRR[14상>동대문]RW[7상>동작]DRRRRRR"
+    },
+    "h16.json": {
+      "ok": true,
+      "ms": 75,
+      "timedOut": false,
+      "got": "LLLLRRRRRRRRDDDRRRURRR[9하>영등포]DRRRRRRUUUUUUUUUUUUUUUUUU"
+    },
+    "h17.json": {
+      "ok": true,
+      "ms": 75,
+      "timedOut": false,
+      "got": "DDDDDDUUUUUULLLLLUW[13상>노원]R[2하>건대]UUW[1하>시청]DDRRDDLLLLDDDDDDDDDDDDDDDDDDDDDDDDLLLLLLLLLLLLLLLLLLLL"
+    },
+    "h18.json": {
+      "ok": true,
+      "ms": 76,
+      "timedOut": false,
+      "got": "DDDLLW[6상>동작]DRRRRRRUUURRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRUUUUUUUUUUUUUUUUUURRRR"
+    },
+    "h19.json": {
+      "ok": true,
+      "ms": 73,
+      "timedOut": false,
+      "got": "LRRRRRRRRRRRRRDDDRRRURR[8>흑석]RRRRURRDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRR"
+    },
+    "h20.json": {
+      "ok": true,
+      "ms": 74,
+      "timedOut": false,
+      "got": "DDDUUURRRURRRW[3외>교대]LLRUUW[9상>구로]UUW[8하>노원]RRUUUU"
+    },
+    "h21.json": {
+      "ok": true,
+      "ms": 73,
+      "timedOut": false,
+      "got": "DDDUUURRRURRRW[3상>여의도]DDRLW[11하>이촌]LRUUW[6상>동작]DDLRW[13상>서울역]DDRRDD"
+    },
+    "h22.json": {
+      "ok": true,
+      "ms": 73,
+      "timedOut": false,
+      "got": "DDDUUULLDLLW[7상>왕십리]DRLW[3상>신림]DDLLLRRR[9상>강남]DLLLLDDDDDDDDDDDDDDDLLLL"
+    },
+    "h23.json": {
+      "ok": true,
+      "ms": 74,
+      "timedOut": false,
+      "got": "DDDRRUW[13>광나루]DLUU[12상>신당]LLLLRLRL[8상>종로]DDLLDD"
+    }
+  }
+}

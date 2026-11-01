@@ -1,0 +1,49 @@
+{
+  "task": "t1",
+  "combo": "team-delegate",
+  "rep": 1,
+  "pass": 36,
+  "total": 36,
+  "failed": [],
+  "costUsd": 0.7893556999999999,
+  "costByModel": {
+    "opus": 0.5157901999999999,
+    "sonnet": 0.2735655
+  },
+  "durationMs": 154618,
+  "turns": 18,
+  "advisorCalls": 0,
+  "delegations": 3,
+  "delegatedTo": [
+    "researcher",
+    "explorer",
+    "worker"
+  ],
+  "permissionDenials": 2,
+  "claudeError": false,
+  "claudeTimedOut": false,
+  "steps": [
+    {
+      "name": "main",
+      "model": "opus",
+      "costUsd": 0.7893556999999999,
+      "costByModel": {
+        "opus": 0.5157901999999999,
+        "sonnet": 0.2735655
+      },
+      "durationMs": 154618,
+      "turns": 18,
+      "advisorCalls": 0,
+      "delegations": 3,
+      "delegatedTo": [
+        "researcher",
+        "explorer",
+        "worker"
+      ],
+      "permissionDenials": 2,
+      "claudeError": false,
+      "claudeTimedOut": false
+    }
+  ],
+  "work": "/var/folders/ht/prc2m2q939d1l29154xtvtmw0000gn/T/advisor-t1-Bs2nvB"
+}

@@ -1,0 +1,9 @@
+실행 8개 → runs/full-t1
+t1 opus-solo rep1: 36/36 · $0.27 (opus $0.27) · 67s · advisor 0 · delegate 0
+t1 team-advisor rep1: 36/36 · $1.47 (opus $0.37 · fable $1.10) · 209s · advisor 2 · delegate 0
+t1 team-advisor-delegate rep1: 36/36 · $2.22 (opus $0.53 · sonnet $0.41 · fable $1.29) · 339s · advisor 2 · delegate 4
+t1 team-delegate rep1: 36/36 · $0.79 (opus $0.52 · sonnet $0.27) · 206s · advisor 0 · delegate 3
+t1 opus-solo rep2: 36/36 · $0.26 (opus $0.26) · 64s · advisor 0 · delegate 0
+t1 team-advisor rep2: 36/36 · $1.61 (opus $0.47 · fable $1.14) · 222s · advisor 2 · delegate 0
+t1 team-advisor-delegate rep2: 36/36 · $2.18 (opus $0.51 · sonnet $0.38 · fable $1.29) · 331s · advisor 2 · delegate 3
+t1 team-delegate rep2: 36/36 · $0.74 (opus $0.43 · sonnet $0.31) · 193s · advisor 0 · delegate 3

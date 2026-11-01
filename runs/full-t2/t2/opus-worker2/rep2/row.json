@@ -1,0 +1,51 @@
+{
+  "task": "t2",
+  "combo": "opus-worker2",
+  "rep": 2,
+  "pass": 23,
+  "total": 23,
+  "failed": [],
+  "costUsd": 3.1050191999999988,
+  "costByModel": {
+    "opus": 1.329528,
+    "sonnet": 1.7754911999999998
+  },
+  "durationMs": 95144,
+  "turns": 9,
+  "advisorCalls": 0,
+  "delegations": 4,
+  "delegatedTo": [
+    "worker",
+    "worker",
+    "worker",
+    "worker"
+  ],
+  "permissionDenials": 1,
+  "claudeError": false,
+  "claudeTimedOut": false,
+  "steps": [
+    {
+      "name": "main",
+      "model": "opus",
+      "costUsd": 3.1050191999999988,
+      "costByModel": {
+        "opus": 1.329528,
+        "sonnet": 1.7754911999999998
+      },
+      "durationMs": 95144,
+      "turns": 9,
+      "advisorCalls": 0,
+      "delegations": 4,
+      "delegatedTo": [
+        "worker",
+        "worker",
+        "worker",
+        "worker"
+      ],
+      "permissionDenials": 1,
+      "claudeError": false,
+      "claudeTimedOut": false
+    }
+  ],
+  "work": "/var/folders/ht/prc2m2q939d1l29154xtvtmw0000gn/T/advisor-t2-XoJgdv"
+}
