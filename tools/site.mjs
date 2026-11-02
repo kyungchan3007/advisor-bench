@@ -48,7 +48,8 @@ a{color:#2563eb}
 .bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
 select,button{font:inherit;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
 .layout{display:grid;grid-template-columns:minmax(0,1fr) 436px;gap:16px;align-items:start}
-@media (max-width:1100px){.layout{grid-template-columns:minmax(0,1fr)}.panel{order:-1;position:static!important}}
+@media (max-width:1100px){.layout{grid-template-columns:minmax(0,1fr) 320px}}
+@media (max-width:760px){.layout{grid-template-columns:minmax(0,1fr)}.panel{position:static}}
 #map svg{display:block;width:100%;height:auto}
 .panel{position:sticky;top:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
 h2{font-size:13px;color:var(--muted);margin:10px 0 6px;font-weight:600}
@@ -231,7 +232,7 @@ $('replay').onclick = () => {
   $('trains').innerHTML = '<span class="none">정답 재생 중</span>';
   const svg = $('map').querySelector('svg');
   insetTimer = setInterval(() => { const t = svg.getCurrentTime() / TICK_S; drawInset(ans.trace.filter((x) => x.t <= t)); }, 100);
-  replayTimer = setTimeout(stopReplay, ans.tick * TICK_S * 1000);
+  replayTimer = setTimeout(() => { stopReplay(); trains(curSim()); }, ans.tick * TICK_S * 1000);
 };
 load(0);
 </script></body></html>
