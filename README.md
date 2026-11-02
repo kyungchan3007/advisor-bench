@@ -13,7 +13,7 @@
 
 <img src="assets/sample-05.svg" width="560" alt="막차 러너 예시 레벨 정답 재생">
 
-<sub>막차 러너 — 금색은 걸은 길, 노선 색은 탄 열차, 빨간 점선은 강제 퇴장</sub>
+<sub>막차 러너 — 위는 노선도 위로 달리는 열차, 아래는 길찾기 앱처럼 정리한 풀이</sub>
 
 ### [🎮 막차 러너 직접 해 보기](https://kyungchan3007.github.io/advisor-bench/)
 
@@ -178,7 +178,7 @@ xychart-beta
 
 <div align="center">
 <img src="assets/h01-pocket.svg" width="100%" alt="h01 정답 재생">
-<sub>h01 — 목적지(초록)는 벽에 갇힌 거리 안. 한 역에 일부러 남아 <b>쫓겨나는 것</b>(빨간 점선)만이 유일한 길</sub>
+<sub>h01 — 도착 지점은 벽에 갇힌 거리 안. 성수역에 일부러 남아 <b>쫓겨나는 것</b>(빨간 점선)만이 유일한 길</sub>
 </div>
 
 - 영상의 "열쇠를 들고 돌아오려면 일부러 구덩이에 빠져야 하는" 레벨과 같은 꼴
