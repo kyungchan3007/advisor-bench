@@ -15,10 +15,11 @@ const GOAL = '#16a34a';
 
 const lineNo = (id) => id.replace(/[상하외내]$/, '');
 
-export function renderReplay(levelJson, actions, title = '') {
+// opts.sim: 진행 중인 풀이(게임 페이지) · opts.crop: 지도 범위를 고정할 궤적
+export function renderReplay(levelJson, actions, title = '', opts = {}) {
   const L = parseLevel(levelJson);
-  const sim = simulate(L, actions);
-  const M = buildMap(L, sim.trace);
+  const sim = opts.sim ?? simulate(L, actions);
+  const M = buildMap(L, [...sim.trace, ...(opts.crop ?? [])]);
   const W = M.width;
   const body = [];
   let y = 0;
@@ -181,6 +182,7 @@ function drawMap(L, M, sim) {
     out.push(`<g visibility="hidden"><set attributeName="visibility" to="visible" begin="${s(t0)}s" dur="${s(span)}s"/><g><animateTransform attributeName="transform" type="translate" values="${vals}" keyTimes="${kt}" begin="${s(t0)}s" dur="${s(span)}s" fill="freeze"/>${train(tn.color, tn.no)}</g></g>`);
   }
   // 승객: 열차 안에서는 숨김
+  if (frames.length === 1) frames.push({ t: 1, p: frames[0].p }); // 아직 움직이지 않음
   const end = frames.at(-1).t || 1;
   const kt = frames.map((x) => (x.t / end).toFixed(4)).join(';');
   const vals = frames.map((x) => `${f(x.p[0])} ${f(x.p[1])}`).join(';');
@@ -230,15 +232,16 @@ function drawRoute(L, M, sim, W) {
     if (b.ev === 'enter') flush(`걸어서 ${roomName(b.r, b.c)}역 개찰구 통과`);
     if (b.ev === 'exit') flush(`${lastRoom}역 개찰구로 나감`);
   }
-  flush('목적지까지 걷기');
+  flush(sim.live ? '걷는 중' : '목적지까지 걷기');
   if (sim.ok) steps.push({ t: sim.tick, icon: 'goal', text: `도착 · 요금 ${sim.fare.toLocaleString('en-US')}원` });
 
   const out = [];
   const bx = 32, bwid = W - 64, by = 52;
-  const head = sim.ok ? `${sim.tick}틱` : '실패';
+  const now = tr.at(-1).t;
+  const head = sim.ok ? `${sim.tick}틱` : sim.live ? `${now}틱` : '실패';
   out.push(`<rect x="12" y="0" width="${W - 24}" height="__H__" rx="10" fill="#fff" stroke="#e5e7eb"/>`);
-  out.push(`<text x="${bx}" y="36" font-size="24" font-weight="bold" fill="${sim.ok ? INK : EVICT}">${head}</text>`);
-  out.push(`<text x="${f(bx + textW(head, 24) + 8)}" y="35" font-size="14" fill="${SUB}">${sim.ok ? `${sim.fare.toLocaleString('en-US')}원 · 승차 ${sim.boardings}번` : esc(sim.error)}</text>`);
+  out.push(`<text x="${bx}" y="36" font-size="24" font-weight="bold" fill="${sim.ok || sim.live ? INK : EVICT}">${head}</text>`);
+  out.push(`<text x="${f(bx + textW(head, 24) + 8)}" y="35" font-size="14" fill="${SUB}">${sim.ok ? `${sim.fare.toLocaleString('en-US')}원 · 승차 ${sim.boardings}번` : sim.live ? `진행 중 · 승차 ${tr.filter((x) => x.ev === 'ride').length}번` : esc(sim.error)}</text>`);
   // 막대: 회색 = 걷기, 연회색 = 기다림, 노선 색 = 열차
   const total = sim.tick || tr.at(-1).t || 1;
   for (const b of bars) {
@@ -246,7 +249,7 @@ function drawRoute(L, M, sim, W) {
     out.push(`<rect x="${f(x)}" y="${by}" width="${f(w)}" height="18" rx="9" fill="${b.color}"/>`);
     if (b.kind === 'ride' && w > 44) out.push(`<text x="${f(x + w / 2)}" y="${by + 13}" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">${esc(b.label)}호선</text>`);
   }
-  out.push(`<text x="${bx}" y="${by + 32}" font-size="11" fill="${SUB}">0틱</text><text x="${bx + bwid}" y="${by + 32}" font-size="11" text-anchor="end" fill="${SUB}">${total}틱</text>`);
+  out.push(`<text x="${bx}" y="${by + 32}" font-size="11" fill="${SUB}">0틱</text><text x="${bx + bwid}" y="${by + 32}" font-size="11" text-anchor="end" fill="${SUB}">${sim.live ? now : total}틱</text>`);
   // 단계 목록 (세로 타임라인)
   let y = by + 60;
   const cx = bx + 50;
