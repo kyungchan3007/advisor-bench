@@ -64,6 +64,10 @@ h2:first-child{margin-top:0}
 .tb{display:inline-flex;align-items:center;gap:6px;padding:3px 10px 3px 3px;border-color:var(--c)}
 .no{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:var(--c);color:#fff;font-weight:700;font-size:11px;font-style:normal}
 .keys{color:var(--muted);font-size:13px;margin:10px 0 0}
+#pad{display:none;grid-template-columns:repeat(3,56px);grid-auto-rows:56px;gap:6px;justify-content:center;margin-top:10px}
+#pad button{padding:0;border-radius:12px;font-size:20px;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+#pad button[data-k=W]{font-size:13px}
+@media (pointer:coarse),(max-width:760px){#pad{display:grid}.panel{display:flex;flex-direction:column}.ride{order:1}.more{order:2}}
 code{border:1px solid var(--line);border-radius:4px;padding:0 4px;word-break:break-all}
 </style></head><body><main>
 <h1>🚇 막차 러너</h1>
@@ -74,11 +78,12 @@ code{border:1px solid var(--line);border-radius:4px;padding:0 4px;word-break:bre
 <aside class="panel">
 <p class="best">최적 기록 <b id="goal"></b></p>
 <div id="msg"></div>
-<h2>지금 탈 수 있는 열차</h2><div id="trains"></div>
+<div class="ride"><h2>지금 탈 수 있는 열차</h2><div id="trains"></div></div>
 <h2>승객 주변 칸</h2><canvas id="inset"></canvas>
-<div class="cells">${CELLS.map(([i, t]) => `<span>${i}${t}</span>`).join('')}</div>
-<p class="keys">방향키 이동 · 스페이스 대기 · 승강장에 열차가 서면 위 버튼으로 탑승</p>
-<p class="keys">내 행동: <code id="acts"></code></p>
+<div id="pad"><span></span><button data-k="U" aria-label="위로">↑</button><span></span><button data-k="L" aria-label="왼쪽으로">←</button><button data-k="W">대기</button><button data-k="R" aria-label="오른쪽으로">→</button><span></span><button data-k="D" aria-label="아래로">↓</button><span></span></div>
+<div class="more"><div class="cells">${CELLS.map(([i, t]) => `<span>${i}${t}</span>`).join('')}</div>
+<p class="keys">방향키나 화살표 버튼으로 이동 · 스페이스나 대기 버튼으로 대기 · 승강장에 열차가 서면 위 버튼으로 탑승</p>
+<p class="keys">내 행동: <code id="acts"></code></p></div>
 </aside>
 </div>
 </main>
@@ -113,7 +118,7 @@ function paint(actions, title, sim, from) {
   $('map').querySelector('svg').setCurrentTime(from * TICK_S);
 }
 function show(from) {
-  const sim = curSim(), tr = sim.trace;
+  const sim = curSim(), tr = sim.trace, anchor = $('pad').offsetParent ? $('pad') : document.querySelector('.panel'), top = anchor.getBoundingClientRect().top;
   paint(acts, cur.id + ' · 직접 하기', sim, from === undefined ? tr.at(-1).t : from);
   drawInset(tr);
   $('acts').textContent = acts || '(없음)';
@@ -124,6 +129,7 @@ function show(from) {
     msg.style.color = best ? GOAL : '';
   } else msg.textContent = '';
   trains(sim);
+  window.scrollBy(0, anchor.getBoundingClientRect().top - top); // 요약이 길어져도 버튼이 손가락 아래에서 밀리지 않게
 }
 function trains(sim) {
   const tr = sim.trace, p = tr.at(-1), box = $('trains'); box.innerHTML = '';
@@ -221,6 +227,7 @@ document.addEventListener('keydown', (e) => {
   const k = { ArrowUp: 'U', ArrowDown: 'D', ArrowLeft: 'L', ArrowRight: 'R', ' ': 'W' }[e.key];
   if (k) { e.preventDefault(); step(k); }
 });
+$('pad').onclick = (e) => { const k = e.target.dataset && e.target.dataset.k; if (k) step(k); };
 pick.onchange = () => { load(pick.value); pick.blur(); };
 $('reset').onclick = () => { stopReplay(); acts = ''; show(0); };
 $('undo').onclick = () => { stopReplay(); const t = tokenize(acts); t.pop(); acts = t.map((x) => x.move || '[' + x.line + '>' + x.to + ']').join(''); show(); };
